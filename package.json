@@ -1,0 +1,45 @@
+{
+  "name": "chatgpt-desktop",
+  "version": "1.0.0",
+  "description": "An Electron wrapper for ChatGPT. Allowing you to run ChatGPT on your desktop.",
+  "author": "Rodney Koolman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RodneyKoolman"
+  },
+  "homepage": "https://github.com/RodneyKoolman",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.chatgpt",
+    "productName": "ChatGPT Desktop",
+    "files": [
+      "main.js",
+      "preload.js",
+      "node_modules/**/*"
+    ],
+    "mac": {
+      "category": "public.app-category.utilities",
+      "icon": "build/icon.png"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "icon": "build/icon.png"
+    }
+  },
+  "devDependencies": {
+    "electron": "^latest",
+    "electron-builder": "^latest"
+  },
+  "dependencies": {
+    "axios": "^latest",
+    "electron-context-menu": "^latest"
+  }
+}
