@@ -1,7 +1,7 @@
 # ChatGPT Desktop
 
 An Electron wrapper for ChatGPT. Allowing you to run ChatGPT on your desktop.
-It's easy and fast, it will remember your login and you can pin it to your taskbar.
+It's easy and fast, it will remember your OpenAI login and you can pin it to your start menu or taskbar.
 
 - Download here: [Windows executable](https://github.com/RodneyKoolman/ChatGPT-Desktop/releases/download/1.0.0/ChatGPT.Desktop.Setup.1.0.0.exe "Windows executable")
 
